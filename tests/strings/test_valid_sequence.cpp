@@ -16,7 +16,7 @@ TEST(ValidSequence, ImpossibleReturnsEmpty) {
     EXPECT_TRUE(result.empty());
 }
 
-TEST(ValidSequence, SingleCharacterWord2) {
+TEST(ValidSequence, TwoCharacterWord2) {
     auto result = validSequence("abc", "ab");
     EXPECT_EQ(result, (std::vector<int>{0,1}));
 }
