@@ -9,10 +9,10 @@ TEST(LongestRepeating, BasicExample) {
     EXPECT_EQ(result, (std::vector<int>{3, 3, 4}));
 }
 
-TEST(LongestRepeating, BasicExample) {
+TEST(LongestRepeating, SecondExample) {
     std::string s = "abyzz";
     std::string queryCharacters = "aa";
-    std::vector<int> queryIndices = {21};
+    std::vector<int> queryIndices = {2, 1};
     auto result = longestRepeating(s, queryCharacters, queryIndices);
     EXPECT_EQ(result, (std::vector<int>{2, 3}));
 }
