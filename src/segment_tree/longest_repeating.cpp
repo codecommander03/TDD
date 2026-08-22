@@ -57,6 +57,8 @@ void update(int node, int start, int end, int idx, char c) {
 }
 
 
+}  // namespace
+
 std::vector<int> longestRepeating(std::string s, std::string queryCharacters, std::vector<int>& queryIndices) {
     int n = s.size(), k = queryCharacters.size();
     tree.assign(4 * n, Node{});

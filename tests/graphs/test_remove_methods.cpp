@@ -1,5 +1,5 @@
 #include <gtest/gtest.h>
-#include "graph/remove_methods.hpp"
+#include "graphs/remove_methods.hpp"
 
 TEST(RemoveMethods, SafeMethodCallsSuspicious_RemovesAll) {
     int n = 4, k = 1;
