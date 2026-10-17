@@ -47,7 +47,7 @@ TEST(SubarraysDistinctElementSumOfSquaresII, LargeAllSameWrapsModulo) {
 
 TEST(SubarraysDistinctElementSumOfSquaresII, LargeAllDistinctWrapsModulo) {
     // All distinct: sum over L of (n - L + 1) * L^2 = n(n+1)^2(n+2) / 12.
-    // For n = 1e5 that is 83335833358333350000 -> 497683716 mod 1e9 + 7.
+    // For n = 1e5 that is 8333666670833350000 -> 497683716 mod 1e9 + 7.
     std::vector<int> nums(100000);
     for (int i = 0; i < 100000; i++) nums[i] = i + 1;
     EXPECT_EQ(sumCountsII(nums), 497683716);
