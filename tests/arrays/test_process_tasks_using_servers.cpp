@@ -37,7 +37,8 @@ TEST(ProcessTasksUsingServers, AllBusyTieOnWeight) {
     EXPECT_EQ(assignTasks(servers, tasks), (std::vector<int>{1, 0, 1}));
 }
 
-// At second 2 both are busy; server 1 frees at 5, server 0 at 6 -> server 1
+// At second 2 both are busy; server 0 frees at 5, server 1 at 6 -> server 0
+// takes it at 5
 TEST(ProcessTasksUsingServers, AllBusyEarliestFinishWins) {
     std::vector<int> servers = {1, 2};
     std::vector<int> tasks = {5, 5, 1};
